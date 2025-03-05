@@ -34,13 +34,14 @@ def coz(sifreli_metin, key):
 
 # Animasyon efekti
 def animasyon(mesaj):
+    print(" ")
     for _ in range(3):
         print(f"\r{mesaj}.  ", end="", flush=True)
-        time.sleep(0.5)
+        time.sleep(0.05)
         print(f"\r{mesaj}.. ", end="", flush=True)
-        time.sleep(0.5)
+        time.sleep(0.05)
         print(f"\r{mesaj}...", end="", flush=True)
-        time.sleep(0.5)
+        time.sleep(0.05)
     print("\r" + " " * len(mesaj) + "\r", end="")
 
 # Ana menü
